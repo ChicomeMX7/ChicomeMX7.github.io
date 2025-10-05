@@ -6,14 +6,9 @@ import { Layout } from "./components/Layout/Layout";
 
 function App() {
   return (
-    <AppContextProvider value="H">
+    <AppContextProvider>
       <Layout>
         <RecorderScreen />
-        <ControlPannel />
-        <ControlPannel />
-        <ControlPannel />
-        <ControlPannel />
-        <ControlPannel />
         <ControlPannel />
       </Layout>
     </AppContextProvider>

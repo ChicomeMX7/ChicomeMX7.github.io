@@ -8,11 +8,13 @@ export const Frame = styled("div", {
   borderRadius: "1mm",
   position: "relative",
   overflow: "hidden",
-  margin: '0 !important',
-  padding: '0 !important',
-  
+  margin: "0 !important",
+  padding: "0 !important",
+
   display: "grid",
-  gridColumnStart: 2.
+  gridColumnStart: 2,
+  justifySelf: "center",
+  alignSelf: "center",
 });
 
 export const Screen = styled("div", {
@@ -21,5 +23,16 @@ export const Screen = styled("div", {
   placeItems: "center",
   width: "100%",
   height: "100%",
+  borderRadius: "1mm",
+});
+
+export const RecorderCanvas = styled("canvas", {
+  position: "absolute",
+  display: "block",
+  top: "0",
+  left: "0",
+  width: "100%",
+  height: "100%",
+  zIndex: 1,
   borderRadius: "1mm",
 });
